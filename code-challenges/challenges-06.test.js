@@ -158,7 +158,7 @@ const hasChildrenValues = (arr, character) => {
   let x = 0;
   arr.forEach(element =>{
     if(element.name === character){
-      x =1;
+      x =Object.values(element).length;
     }
   });
   return x;
