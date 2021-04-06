@@ -86,10 +86,11 @@ const grandTotal = (stores) => {
   // Solution code here...
   const arr =[];
   for(let i=0 ; i<stores.length;i++){
-    let count = 0;
-    for(let j=0 ;j<stores.length;j++){
-      count= firstPike[j]+seaTac[j]+seattleCenter[j]+capHill[j]+alkiBeach[j];
-      arr.push(count);
+    
+    for(let j=0 ;j<stores[i].length;j++){
+     if(typeof arr[j]=== 'number')
+     arr[j]+=stores[i][j];
+     else arr[j]=stores[i][j];
     }
 
   }
