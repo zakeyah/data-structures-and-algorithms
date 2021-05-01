@@ -118,8 +118,13 @@ HR has asked you to change the data to make it easier to print so that it looks 
 const updateNumbers = (obj) => {
   // Solution code here...
   const arr =[];
-  for (let property in obj){
-    arr.push(`${property}: ${obj[property]}`);
+  // for (let property in obj){
+  //   arr.push(`${property}: ${obj[property]}`);
+  // }
+  const keys = Object.keys(obj);
+  const values = Object.values(obj);
+  for(let i=0 ;i<keys.length;i++){
+    arr.push(`${keys[i]}: ${values[i]}`);
   }
   return arr ;
 };
@@ -158,7 +163,7 @@ const hasChildrenValues = (arr, character) => {
   let x = 0;
   arr.forEach(element =>{
     if(element.name === character){
-      x =Object.values(element).length;
+      x =1;
     }
   });
   return x;
@@ -175,6 +180,13 @@ The input and output of this function are the same as the input and output from 
 
 const hasChildrenEntries = (arr, character) => {
   // Solution code here...
+  let x = 0;
+  arr.forEach(element =>{
+    if(element.name === character){
+      x =1;
+    }
+  });
+  return x;
 };
 
 /* ------------------------------------------------------------------------------------------------

@@ -32,10 +32,9 @@ Write a function named addValues that, given an array of numbers as input, uses 
 
 const addValues = (arr) => {
   // Solution code here...
-  let result = arr.reduce((acc, currVal) => {
-    return acc + currVal;
-  }, 0);
-  return result;
+  const x = arr.reduce((pre,cur)=>pre+cur,0);
+  return x;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -52,9 +51,10 @@ Write a function named addPurchases that, given an array of objects as input, us
 
 const addPurchases = (arr) => {
   // Solution code here...
-  return arr.reduce((acc, currVal) => {
-    return acc + currVal.purchasePrice;
-  }, 0);
+  const x = arr.reduce((pre,cur)=>pre+cur.purchasePrice,0);
+  return x;
+
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,6 +67,8 @@ Note: You may not use the array's built-in length property.
 
 const countNumberOfElements = (arr) => {
   // Solution code here...
+  const x = arr.reduce(pre=>pre+1,0);
+  return x;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -127,6 +129,9 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
+  const newArr=[];
+  arr.reduce((pre,cur)=>newArr.push(cur.name),0);
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -139,6 +144,9 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
+  const x=str.split('');
+  const y= x.reduce((pre,cur)=>cur+pre,'');
+  return y;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -192,6 +200,11 @@ const characters = [
 
 const countNumberOfChildren = (arr) => {
   // Solution code here...
+  // let cur=cur.children.length||0;
+  const x =arr.reduce((pre,cur)=>{
+    if(cur.children){pre=pre+cur.children.length;}
+    return pre; },0);
+  return x;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -336,7 +349,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   test('It should return the total number of children', () => {
     expect(countNumberOfChildren(characters)).toStrictEqual(14);
   });
