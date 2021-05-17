@@ -8,6 +8,10 @@ Linked List is a linear data structure.linked list elements are not stored at a 
 - Define a method called includes.
 - Define a method called toString.
 
+## Approach & Efficiency
+The Big O
+space: O(1)
+time: O(n)
 
 ## API
 
@@ -15,3 +19,10 @@ Linked List is a linear data structure.linked list elements are not stored at a 
 - Define a method called includes =>which takes any value as an argument and returns a boolean result .
 - Define a method called toString => returns a string representing all the values in the Linked List, formatted as:
 "{ a } -> { b } -> { c } -> NULL"
+- Define a method called Append : which adds a new node with the given value to the end of the list
+- Define a method called insert before : which add a new node with the given newValue immediately before the   first value node.
+- Define a method called insert after : which add a new node with the given newValue immediately after the first value node
+
+## Whiteboard Process callenge 6
+
+![](/assets/challeng66.jpg)
