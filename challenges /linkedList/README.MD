@@ -22,7 +22,12 @@ time: O(n)
 - Define a method called Append : which adds a new node with the given value to the end of the list
 - Define a method called insert before : which add a new node with the given newValue immediately before the   first value node.
 - Define a method called insert after : which add a new node with the given newValue immediately after the first value node
+- Define a method called kthFromEnd : which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list
 
 ## Whiteboard Process callenge 6
 
-![](/assets/challeng66.jpg)
+![](/assets/last.JPG)
+
+
+challeng 7
+![](/assets/challeng7.JPG)

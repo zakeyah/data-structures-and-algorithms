@@ -104,6 +104,37 @@ class LinkedList {
     }
     return this;
   }
+  kthFromEnd(k){
+    if (typeof k !== 'number' || !Number.isInteger(k) || k<0){
+      return 'Exception';
+    }
+    let length = 0;
+    let pointer = 0;
+    let current = this.head;
+    length ++;
+    while(current.next){
+      current = current.next;
+      length ++;
+    } 
+    if (k>length){
+      return 'Exception';
+    }
+     if (k<length){
+       current = this.head;
+       console.log('hiii')
+      while(current.next){
+      if(k===length-pointer){
+        return current.value;
+      }else{
+      current = current.next;
+      }
+      pointer++
+      }
+      if(k===length-pointer){
+        return current.value;
+      }
+    } 
+  }
 }
 
 module.exports={

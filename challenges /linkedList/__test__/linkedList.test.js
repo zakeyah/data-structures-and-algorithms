@@ -50,6 +50,13 @@ describe('test the Linked List',()=>{
     expect(linkedList.head.value).toEqual(11);
     expect(linkedList.head.next.value).toEqual(5);
   });
+  it('test  LinkedList  kthFromEnd',()=>{
+    expect(linkedList.kthFromEnd(-1)).toEqual('Exception');
+    expect(linkedList.kthFromEnd('aaa')).toEqual('Exception');
+    expect(linkedList.kthFromEnd(0.5)).toEqual('Exception');
+    expect(linkedList.kthFromEnd(5)).toEqual(5);
+    expect(linkedList.kthFromEnd(1)).toEqual(3);
+  });
 
 });
 
