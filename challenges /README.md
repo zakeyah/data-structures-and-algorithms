@@ -2,7 +2,8 @@
 
 | topic   | link |
 | ----------- | ----------- |
-| arrayReverse      | [arrayReverse](challenges/arrayReverse)     |
-| array-shift       | [array-shift](challenges/arrayShift)        |
-| BinarySearch      | [BinarySearch](challenges/BinarySearch)        |
+| arrayReverse      | [arrayReverse](challenges/arrayReverse/README.md)     |
+| array-shift       | [array-shift](challenges/arrayShift/README.md)        |
+| BinarySearch      | [BinarySearch](challenges/BinarySearch/README.md)        |
+| LinkedList      | [LinkedList](challenges/LinkedList/README.md)        |
 
