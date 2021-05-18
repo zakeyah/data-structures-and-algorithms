@@ -22,7 +22,7 @@ class LinkedList {
     }
     return this;
   }
-
+  
 
   includes(value){
     let current = this.head;
