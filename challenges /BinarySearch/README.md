@@ -10,4 +10,4 @@ Function take a array and  value  as an argument and will return the index of th
 
 ## Solution
 
-![](/assets/BinarySearch.jpg)
+![](/assets/BinarySearch.JPG)
