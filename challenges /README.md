@@ -7,4 +7,5 @@
 | BinarySearch      | [BinarySearch](challenges/BinarySearch/README.md)        |
 | LinkedList        | [LinkedList](challenges/LinkedList/README.md)        |
 | zipLists          | [zipLists](challenges/ll-zip/README.md)        |
+| stacksAndQueues   | [stacksAndQueues](challenges/stacksAndQueues/README.md)        |
 
