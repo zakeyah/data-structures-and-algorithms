@@ -32,11 +32,12 @@ class Stack {
     return this.top;
   }
   isEmpty() {
-    if (this.top) {
-      return false;
-    } else {
-      return true;
-    }
+    // if (this.top) {
+    //   return false;
+    // } else {
+    //   return true;
+    // }
+    return this.top===null;
   }
 }
 
