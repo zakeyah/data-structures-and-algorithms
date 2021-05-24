@@ -13,3 +13,15 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+
+| topic   | link |
+| ----------- | ----------- |
+| arrayReverse      | [arrayReverse](challenges/arrayReverse/README.md)     |
+| array-shift       | [array-shift](challenges/arrayShift/README.md)        |
+| BinarySearch      | [BinarySearch](challenges/BinarySearch/README.md)        |
+| LinkedList        | [LinkedList](challenges/LinkedList/README.md)        |
+| zipLists          | [zipLists](challenges/ll-zip/README.md)        |
+| stacksAndQueues   | [stacksAndQueues](challenges/stacksAndQueues/README.md)        |
+| queueWithStacks   | [queueWithStacks](challenges/queueWithStacks/README.md)        |
+| fifoAnimalShelter | [fifoAnimalShelter](challenges/fifoAnimalShelter/README.md)        |

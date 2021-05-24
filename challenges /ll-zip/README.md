@@ -12,4 +12,4 @@ space: O(1)
 time: O(n)
 
 ## Solution
-![](/assets/challeng8.jpg)
+![](/assets/challeng8.JPG)
