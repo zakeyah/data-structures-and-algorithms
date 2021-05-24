@@ -16,7 +16,7 @@ describe('Queue Test', () => {
     expect(sQueue.stack1.top.next.value).toBe(2);
     expect(sQueue.stack2.isEmpty()).toBeTruthy();
   });
-  it('should dequeue ', () => {
+  it('should dequeue  ', () => {
     const sQueue = new PseudoQueue();
     sQueue.enqueue(5);
     sQueue.enqueue(6);
