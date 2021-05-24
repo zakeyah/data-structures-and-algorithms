@@ -24,3 +24,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | zipLists          | [zipLists](challenges/ll-zip/README.md)        |
 | stacksAndQueues   | [stacksAndQueues](challenges/stacksAndQueues/README.md)        |
 | queueWithStacks   | [queueWithStacks](challenges/queueWithStacks/README.md)        |
+| fifoAnimalShelter | [fifoAnimalShelter](challenges/fifoAnimalShelter/README.md)        |
