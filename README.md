@@ -25,3 +25,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | stacksAndQueues   | [stacksAndQueues](challenges/stacksAndQueues/README.md)        |
 | queueWithStacks   | [queueWithStacks](challenges/queueWithStacks/README.md)        |
 | fifoAnimalShelter | [fifoAnimalShelter](challenges/fifoAnimalShelter/README.md)        |
+| multiBracketValidation | [multiBracketValidation](challenges/multiBracketValidation/README.md)        |
