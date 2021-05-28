@@ -3,8 +3,8 @@
 class Node {
   constructor(value, right = null, left = null) {
     this.value = value,
-      this.right = right,
-      this.left = left
+    this.right = right,
+    this.left = left
   }
 }
 
@@ -57,39 +57,39 @@ class BinarySearchTree {
 
   add(value) {
     const newNode = new Node(value);
-
-    if(!this.root){
-      this.root=newNode;
+    if (!this.root) {
+      this.root = newNode;
     }
-      const searchToAdd = (node) => {
-        console.log(node,'this is node')
-        if (value < node.value) {
-          console.log('hhhhhhhhhh')
-          if (!node.left) {
-            console.log('after')
-            node.left = newNode;
-          } else {
-            searchToAdd(node.left);
-          }
-  
-        } else if (value > node.value) {
-          if (!node.left) {
-            node.right = newNode;
-          } else {
-            searchToAdd(node.right);
-          }
-  
-  
+    const searchToAdd = (node) => {
+      if (value < node.value) {
+        if (!node.left) {
+          node.left = newNode;
+        } else {
+          searchToAdd(node.left);
         }
-        
-        
-        
-      };
-      searchToAdd(this.root);
-  }
-  // add(value){
 
-  // }
+      } else if (value > node.value) {
+        if (!node.right) {
+          node.right = newNode;
+        } else {
+          searchToAdd(node.right);
+        }
+      }
+    };
+    searchToAdd(this.root);
+  }
+ 
+  contains(value) {
+    if (this.root === null) return 'Empty Tree!';
+    let current = this.root;
+    while (current) {
+      if (value < current.value) current = current.left;
+      else if (value > current.value) current = current.right;
+      else return true;
+    }
+    return false;
+  }
+ 
 }
 
 module.exports = {
