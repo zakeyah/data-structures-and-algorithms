@@ -47,6 +47,21 @@ class BinaryTree {
     return results;
   }
 
+  findMaximumValue(){
+    if(!this.root){
+      return 'Tree is Empty';
+    }
+    let max = this.root.value;
+    let array = this.preOrder();
+    for (let i=0; i<array.length;i++){
+      if( array[i]> max){
+        max = array[i];
+      }
+    }
+    return max;
+
+  }
+
 
 }
 
