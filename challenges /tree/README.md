@@ -20,6 +20,9 @@ Define a method named contains that accepts a value, and returns a boolean indic
 3- postOrder 
 - space O(h)
 - time O(n)
+4- findMaximumValue
+- space O(n)
+- time O(n)
 
 #### BinarySearchTree
 1- add
@@ -42,6 +45,10 @@ Define a method named contains that accepts a value, and returns a boolean indic
 3- postOrder 
 - returns an array of the values left > right>root
 
+4- findMaximumValue
+- returns the max value from the tree
+
+
 
 #### BinarySearchTree
 1- add
@@ -49,3 +56,9 @@ Define a method named contains that accepts a value, and returns a boolean indic
 
 2- contain
 - returns a boolean indicating whether or not the value is in the tree at least once.
+
+
+# findMaximumValue
+Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+![](/assets/challenge16.jpg)

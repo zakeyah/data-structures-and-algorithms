@@ -7,26 +7,26 @@ let tree = null;
 describe('Binary Tree', () => {
 
   beforeAll(() => {
-    const a = new Node('a');
-    const b = new Node('b');
-    const c = new Node('c');
-    const d = new Node('d');
-    const e = new Node('e');
-    const f = new Node('f');
-    const g = new Node('g');
-    const h = new Node('h');
-    const i = new Node('i');
+    let one = new Node(1);
+    let two = new Node(2);
+    let three = new Node(3);
+    let four = new Node(4);
+    let five = new Node(5);
+    let six = new Node(6);
+    let seven = new Node(7);
+    let eight = new Node(8);
+    let nine = new Node(9);
 
-    a.left = b;
-    a.right = c;
-    b.left = f;
-    f.right = g;
-    g.left = h;
-    g.right = i;
-    c.left = d;
-    c.right = e;
+    one.left = two;
+    one.right = three;
+    two.left = six;
+    six.right = seven;
+    seven.left = eight;
+    seven.right = nine;
+    three.left = four;
+    three.right = five;
 
-    tree = new BinaryTree(a);
+    tree = new BinaryTree(one);
   });
 
   it('constructor', () => {
@@ -35,23 +35,30 @@ describe('Binary Tree', () => {
   });
 
   it('Can successfully return a collection from a preorder traversal', () => {
-    let expected = ['a', 'b', 'f', 'g', 'h', 'i', 'c', 'd', 'e'];
+    let expected = [1, 2, 6, 7, 8, 9, 3, 4, 5];
     let preOrderResult = tree.preOrder();
     expect(preOrderResult).toEqual(expected);
   });
 
   it('Can successfully return a collection from an inorder traversal', () => {
-    let expected = ['f', 'h', 'g', 'i', 'b', 'a', 'd', 'c', 'e'];
+    let expected = [6, 8, 7, 9, 2, 1, 4, 3, 5];
     let inOrderResult = tree.inOrder();
     expect(inOrderResult).toEqual(expected);
   });
 
   it('Can successfully return a collection from a postorder traversal', () => {
-    let expected = ['h', 'i', 'g', 'f', 'b', 'd', 'e', 'c', 'a'];
+    let expected = [8, 9, 7, 6, 2, 4, 5, 3, 1];
     let postOrderResult = tree.postOrder();
     expect(postOrderResult).toEqual(expected);
   });
+
+  it('Can successfully return the max value from the tree', () => {
+    expect(tree.findMaximumValue()).toEqual(9);
+  });
 });
+
+
+
 describe('Binary Search Tree', () => {
 
 
