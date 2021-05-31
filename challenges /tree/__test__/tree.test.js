@@ -55,6 +55,10 @@ describe('Binary Tree', () => {
   it('Can successfully return the max value from the tree', () => {
     expect(tree.findMaximumValue()).toEqual(9);
   });
+
+  it('return the values from the tree in array sorted Breadth First Traversal', () => {
+    expect(tree.breadthFirst()).toEqual([1,2,3,6,4,5,7,8,9]);
+  });
 });
 
 
