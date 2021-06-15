@@ -26,3 +26,9 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | queueWithStacks   | [queueWithStacks](challenges/queueWithStacks/README.md)        |
 | fifoAnimalShelter | [fifoAnimalShelter](challenges/fifoAnimalShelter/README.md)        |
 | multiBracketValidation | [multiBracketValidation](challenges/multiBracketValidation/README.md)        |
+| tree | [tree](challenges/tree/README.md)                                 |
+| BinarySearch | [BinarySearch](challenges/BinarySearch/README.md)        |   
+| fizzBuzzTree | [fizzBuzzTree](challenges/fizzBuzzTree/README.md)        |
+| InsertionSort | [InsertionSort](challenges/InsertionSort/README.md)        |
+| Mergesort | [Mergesort](challenges/Mergesort/README.md)        |
+| QuickSort | [QuickSort](challenges/QuickSort/README.md)        |
