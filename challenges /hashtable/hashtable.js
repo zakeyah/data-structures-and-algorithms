@@ -51,7 +51,7 @@ class HashTable{
       current=current.next;
     }
     if(Object.keys(current.value)[0]===key){
-      return Object.values(current.value)[0]
+      return Object.values(current.value)[0];
     }
     return null;
   }
