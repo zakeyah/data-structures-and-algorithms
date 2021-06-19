@@ -44,15 +44,15 @@ class HashTable{
       return null;
     }
     let current= this.table[hashed].root;
-    while(current.next){
+    while(current){
       if(Object.keys(current.value)[0]===key){
         return Object.values(current.value)[0];
       }
       current=current.next;
     }
-    if(Object.keys(current.value)[0]===key){
-      return Object.values(current.value)[0];
-    }
+    // if(Object.keys(current.value)[0]===key){
+    //   return Object.values(current.value)[0];
+    // }
     return null;
   }
   contains(key){
@@ -64,15 +64,15 @@ class HashTable{
     if(Object.keys(current.value)[0]===key){
       return true;
     }
-    while(current.next){
+    while(current){
       if(Object.keys(current.value)[0]===key){
         return true;
       }
       current=current.next;
     }
-    if(Object.keys(current.value)[0]===key){
-      return true;
-    }
+    // if(Object.keys(current.value)[0]===key){
+    //   return true;
+    // }
     return false;
   }
   hash(key){
