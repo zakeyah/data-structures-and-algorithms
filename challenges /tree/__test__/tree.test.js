@@ -1,7 +1,7 @@
 'use strict';
 
-const BinaryTree = require('../tree').BinaryTree;
-const Node = require('../tree').Node;
+const BinaryTree = require('../tree/tree').BinaryTree;
+const Node = require('../tree/tree').Node;
 const BinarySearchTree = require('../tree').BinarySearchTree;
 let tree = null;
 describe('Binary Tree', () => {

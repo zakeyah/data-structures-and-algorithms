@@ -36,6 +36,7 @@ class HashTable{
     if(!this.table[hashed]){
       this.table[hashed]=new LinkedList();
     }
+    // console.log(';;;;;;;;;;;',{[key]:value})
     this.table[hashed].add({[key]:value});
   }
   get(key){
