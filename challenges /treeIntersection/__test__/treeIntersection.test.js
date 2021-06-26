@@ -1,6 +1,7 @@
 'use strict';
 const Node= require('../../tree/tree').Node;
 const BinaryTree= require('../../tree/tree').BinaryTree;
+const treeIntersection = require('../treeIntersection')
 let tree1;
 let tree2;
 beforeAll(() => {
