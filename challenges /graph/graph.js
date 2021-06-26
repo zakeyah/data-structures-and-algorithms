@@ -17,6 +17,7 @@ class Graph {
       return;
     }
     const adjacencies = this.adjacencyList.get(start);
+    // console.log(adjacencies,'.................')
     adjacencies.push(new Edge(end, weight));
   }
 
@@ -28,10 +29,10 @@ class Graph {
     return this.adjacencyList.get(vertex);
   }
   getNodes() {
-    return this._adjacencyList.entries();
+    return this.adjacencyList.entries();
   }
-  getSize() {
-    return this._adjacencyList.size > 0 ? this._adjacencyList.size : 'Empty Graph';
+  size() {
+    return this.adjacencyList.size > 0 ? this.adjacencyList.size : null;
   }
   // print() {
   //   for (const [k, v] of this._adjacencyList.entries()) {
