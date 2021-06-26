@@ -30,6 +30,7 @@ describe('Hash Table', () => {
   it('should handle a collision within the hashtable', () => {
     hashTable.add('nnaa', 1234);
     hashTable.add('aann', 4444);
+    console.log([Object.values(hashTable.table[107])],';;;;;;;;;')
     expect(hashTable.contains('nnaa')).toBeTruthy();
     expect(hashTable.contains('aann')).toBeTruthy();
     expect(hashTable.get('nnaa')).toEqual(1234);
