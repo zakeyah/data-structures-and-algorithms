@@ -15,6 +15,7 @@ class BreadthFirst extends Graph {
         index++;
       }
       const x= this.getNeighbours(vertex);
+      console.log(x)
       for(let i=0 ;i<x.length;i++){
         queue.enqueue(x[i].vertex);
       }
